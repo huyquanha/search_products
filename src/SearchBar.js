@@ -19,12 +19,12 @@ class SearchBar extends React.Component {
     }
 
     render() {
-        const { innerRef, ...rest } = this.props;
         let themeContext = this.context;
         return (
             <React.Fragment>
                 <input name="searchText"
                        type="text"
+                       ref={this.props.forwardedRef}
                        placeholder="Search..."
                        onChange={this.handleTextInputChange}
                        style = {{backgroundColor : themeContext.theme.background}}/>
@@ -39,9 +39,8 @@ class SearchBar extends React.Component {
     }
 }
 
-//export default SearchBar;
 const ExportSearchBar = React.forwardRef((props,ref) => (
-    <SearchBar {...props} innerRef={ref}/>
+    <SearchBar {...props} forwardedRef={ref}/>
 ));
 
 export default ExportSearchBar;

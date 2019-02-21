@@ -1,7 +1,7 @@
 import React, {Component, Suspense} from 'react';
 import SearchBar from './SearchBar';
 import ErrorBoundary from './error-boundary';
-import ControlRefButton from './control-ref-button';
+//import ControlRefButton from './control-ref-button';
 
 const ProductTable = React.lazy(()=>import('./ProductTable'));
 
