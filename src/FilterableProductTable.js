@@ -1,11 +1,10 @@
-import React, {Component, Suspense} from 'react';
+import React, {Component, Suspense, useState} from 'react';
 import SearchBar from './SearchBar';
 import ErrorBoundary from './error-boundary';
-//import ControlRefButton from './control-ref-button';
 
 const ProductTable = React.lazy(()=>import('./ProductTable'));
 
-class FilterableProductTable extends Component {
+/*class FilterableProductTable extends Component {
     constructor(props) {
         super(props);
         this.state={
@@ -49,10 +48,45 @@ class FilterableProductTable extends Component {
                                       inStock = {this.state.inStock}/>
                     </Suspense>
                 </ErrorBoundary>
-                {/*<ControlRefButton ref={this.ref}/>*/}
             </div>
         )
     }
+}*/
+
+function FilterableProductTable(props) {
+    const [searchText, setSearchText] = useState('');
+    const [inStock, setInStock] = useState(false);
+    const ref = React.createRef();
+
+    function handleTextInputChange(value) {
+        setSearchText(value);
+    }
+
+    function handleCheckboxChange(value) {
+        if (value) {
+            ref.current.style.backgroundColor='red';
+        }
+        else {
+            ref.current.style.backgroundColor='blue';
+        }
+        setInStock(value);
+    }
+
+    return (
+        <div className="filterableProductTable">
+            <SearchBar
+                onTextInputChange={handleTextInputChange}
+                onCheckboxChange={handleCheckboxChange}
+                ref = {ref}/>
+            <ErrorBoundary>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <ProductTable products={props.products}
+                                  searchText={searchText}
+                                  inStock = {inStock}/>
+                </Suspense>
+            </ErrorBoundary>
+        </div>
+    )
 }
 
 export default FilterableProductTable;

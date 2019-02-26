@@ -3,10 +3,6 @@ import ProductRow from './ProductRow';
 import ProductCategoryRow from './ProductCategoryRow';
 
 class ProductTable extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         let products = this.props.products;
         const searchText = this.props.searchText;
