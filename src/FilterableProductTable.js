@@ -1,4 +1,4 @@
-import React, {Component, Suspense, useState} from 'react';
+import React, {Component, Suspense, useState, useEffect} from 'react';
 import SearchBar from './SearchBar';
 import ErrorBoundary from './error-boundary';
 
@@ -57,6 +57,10 @@ function FilterableProductTable(props) {
     const [searchText, setSearchText] = useState('');
     const [inStock, setInStock] = useState(false);
     const ref = React.createRef();
+
+    useEffect(()=>{
+        document.title=`You searched ${searchText}`
+    });
 
     function handleTextInputChange(value) {
         setSearchText(value);
