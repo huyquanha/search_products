@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="069e4690-6764-415f-a47f-690c49133870" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FilterableProductTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FilterableProductTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductCategoryRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductCategoryRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductTable.js" afterDir="false" />
-    </list>
+    <list default="true" id="069e4690-6764-415f-a47f-690c49133870" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -34,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FilterableProductTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="85" column="45" lean-forward="true" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+            <state relative-caret-position="34">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -176,15 +170,16 @@
       <updated>1549863697827</updated>
       <workItem from="1549863699167" duration="39268000" />
       <workItem from="1550743080226" duration="1616000" />
-      <workItem from="1550782150488" duration="3139000" />
+      <workItem from="1550782150488" duration="3776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44023000" />
+    <option name="totallyTimeSpent" value="44660000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1836248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FilterableProductTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="85" column="45" lean-forward="true" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
